@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+nav {
+  text-decoration: none;
+}
+
+.thyline {
+  border-bottom: solid #A75D61 2px;
+  margin-top: 2%;
+}
+
+.sectitles {
+  text-align: center;
+  color: #57595A;
+  padding-top: 1%;
+}
+
+.sectitles {
+ overflow: hidden;
+ text-align: center;
+
+}
+
+.sectitles:before,
+.sectitles:after {
+ /* background-color: #2C3E92; */
+ background-color: #A75D61;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+
+.sectitles:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+
+.sectitles:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+
+#masterhead {
+  text-align: center;
+    color: #57595A;
+    background: white;
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    animation: slideInDown 1.5s linear;
+    position: fixed;
+    z-index: 1;
+    opacity: .7;
+}
+
+#menu1 {
+  padding-top: 1.5%;
+}
+
+#menu1 a {
+  color: #2C3E92;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#menu2 {
+  padding-top: 2%;
+  font-size: 18px;
+}
+
+#menu2 a{
+  padding-right: 4%;
+  color: #57595A
+}
+
+#menu2 a:hover {
+  color: #000000;
+}
+
+#wellogo {
+  height: 75px;
+  width: 150px;
+}
+
+#homecont {
+  background-image: url("../images/dallasrealty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    text-align: center;
+    color: #222222;
+    padding-top: 260px;
+}
+
+#featured {
+  background: #F6F6F6;
+  height: 500px;
+  text-align: center;
+}
+
+.featuredwrap {
+  margin-top: 7%;
+  padding-top: 1%;
+  background: #2C3E92;
+  color: white;
+  height: 300px;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.featuredwrap:hover {
+  transform: scale(1.1);
+}
+
+.featuredpics {
+  height: 235px;
+  width: 400px;
+}
+
+.featuredpara {
+  padding-top: 1%;
+}
+
+#mainfoot {
+    background: #CDCED1;
+    color: #57595A;
+    height: 300px;
+    padding-top: 2%;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+#mainfoot a {
+  color: #57595A;
+}
+
+#footerpara {
+text-align: left;
+margin-top: 2%;
+}
+
+#picnphone {
+  text-align: right;
+}
+
+#socialwrap {
+  margin-top: 6%;
+}
+
+#littlebrandon {
+  height: 170px;
+  width: 130px;
+}
+
+#copyrights {
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* HOVER OVER ANIMATIONS */
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    /* background-color: rgba(32, 152, 209, 0.75); */
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    /* background-color: rgba(32, 152, 209, 0.75); */
+  }
+}
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /* background-color: #2098D1; */
+  /* background-color: #2098d1; */
+  /* color: white; */
+}
