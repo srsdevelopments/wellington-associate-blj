@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #A75D61;
 }
 
 a:visited, a:link, a:active
@@ -21,15 +22,17 @@ nav {
 }
 
 .sectitles {
+  font-family: 'Basic', sans-serif;
   text-align: center;
   color: #57595A;
-  padding-top: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 48px;
 }
 
 .sectitles {
  overflow: hidden;
  text-align: center;
-
 }
 
 .sectitles:before,
@@ -59,31 +62,39 @@ nav {
   text-align: center;
     color: #57595A;
     background: white;
-    height: 85px;
+    height: 200px;
     width: 100%;
     position: absolute;
     animation: slideInDown 1.5s linear;
     position: fixed;
     z-index: 1;
     opacity: .7;
+    animation: fadeIn 1.5s linear;
 }
 
 #menu1 {
-  padding-top: 1.5%;
+  padding-top: 3%;
+  font-family: 'Basic', sans-serif;
 }
 
 #menu1 a {
+  opacity: 1;
   color: #2C3E92;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: bold;
 }
 
+#menu1 a:hover {
+  color: #051838;
+}
+
 #menu2 {
-  padding-top: 2%;
-  font-size: 18px;
+  padding-top: 4%;
+  font-size: 38px;
 }
 
 #menu2 a{
+  opacity: 1;
   padding-right: 4%;
   color: #57595A
 }
@@ -93,34 +104,61 @@ nav {
 }
 
 #wellogo {
-  height: 75px;
-  width: 150px;
+  margin-top: 5%;
+  height: 150px;
+  width: 250px;
 }
 
 #homecont {
-  background-image: url("../images/dallasrealty.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 750px;
+    height: 100%;
     text-align: center;
     color: #222222;
-    padding-top: 260px;
+}
+
+.slideimg {
+  width: 100%;
+  height: 900px;
+}
+
+.carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
 }
 
 #featured {
   background: #F6F6F6;
-  height: 500px;
+  height: 100%;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#featbigblock {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.featblock {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .featuredwrap {
-  margin-top: 7%;
+  margin-bottom: 5%;
   padding-top: 1%;
   background: #2C3E92;
   color: white;
-  height: 300px;
+  height: 100%;
   text-align: center;
-  transition: transform .2s;
+  transition: transform .3s;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .featuredwrap:hover {
@@ -128,49 +166,107 @@ nav {
 }
 
 .featuredpics {
-  height: 235px;
-  width: 400px;
+  height: 325px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.workhov:hover{
+  opacity: .7;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+}
+
+.featuredtitle {
+  font-size: 34px;
+  margin-top: 1%;
 }
 
 .featuredpara {
-  padding-top: 1%;
+  margin-top: 7%;
+  font-size: 30px;
 }
 
 #mainfoot {
-    background: #CDCED1;
+    background: #E6E6E6;
     color: #57595A;
-    height: 300px;
-    padding-top: 2%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
     width: 100%;
     bottom: 0;
     text-align: center;
 }
 
-#mainfoot a {
+#mainfoot {
   color: #57595A;
 }
 
 #footerpara {
 text-align: left;
-margin-top: 2%;
-}
-
-#picnphone {
-  text-align: right;
+margin-top: 1%;
+margin-bottom: 10%;
+font-size: 32px;
 }
 
 #socialwrap {
-  margin-top: 6%;
+margin-top: 10%;
+font-size: 32px;
+margin-bottom: 10%;
+}
+
+.social {
+  margin-bottom: 10%;
+}
+
+.redsocial {
+  color: #57595A;
+}
+
+.redsocial:hover {
+  color: #A75D61;
+}
+
+.socialimg {
+  height: 75px;
+  width: 75px;
 }
 
 #littlebrandon {
-  height: 170px;
-  width: 130px;
+  height: 550px;
+  width: 425px;
+  border-radius: 10px;
 }
 
 #copyrights {
-  margin-top: 2%;
+  margin-top: 2.5%;
   text-align: center;
+}
+
+#footername {
+  border-bottom: solid 2px #A75D61;
+  color: #57595A;
+}
+
+#footername:hover {
+  color: #A75D61;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .7;
+  }
 }
 
 /* HOVER OVER ANIMATIONS */
@@ -212,4 +308,150 @@ margin-top: 2%;
   /* background-color: #2098D1; */
   /* background-color: #2098d1; */
   /* color: white; */
+}
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 992px){
+
+.sectitles {
+  font-size: 38px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+  #masterhead {
+      height: 85px;
+      width: 100%;
+  }
+
+  #menu1 {
+    padding-top: 1.5%;
+  }
+
+  #menu1 a {
+    font-size: 24px;
+  }
+
+  #menu2 {
+    padding-top: 2%;
+    font-size: 20px;
+  }
+
+  #menu2 a{
+    padding-right: 4%;
+  }
+
+  #wellogo {
+    margin-top: 0%;
+    height: 75px;
+    width: 150px;
+  }
+
+  #homecont {
+      height: 100%;
+  }
+
+  .slideimg {
+    width: 100%;
+    height: 650px;
+  }
+
+  .carousel-control-prev-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  #featured {
+    height: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  #featbigblock {
+    margin-top: 1%;
+    margin-bottom: 5.5%;
+  }
+
+  .featblock {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  .featuredwrap {
+    margin-bottom: 5%;
+    padding-top: 1%;
+    text-align: center;
+  }
+
+  .featuredpics {
+    height: 235px;
+    width: 400px;
+  }
+
+  .featuredtitle {
+    font-size: 20px;
+  }
+
+  .featuredpara {
+    margin-top: 5%;
+    font-size: 16px;
+    margin-bottom: 1%;
+  }
+
+  #mainfoot {
+      height: 100%;
+      padding-top: 1%;
+      padding-bottom: 2%;
+      width: 100%;
+  }
+
+  #footerpara {
+  margin-top: 5%;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 5%;
+  margin-bottom: 0%;
+  }
+
+  #socialwrap {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 5%;
+  }
+
+  .social {
+    margin-bottom: 0%;
+  }
+
+  .socialimg {
+    height: 75px;
+    width: 75px;
+  }
+
+  #brandonpic {
+    text-align: right;
+    padding-right: 5%;
+    padding-top: 2%;
+  }
+
+  #littlebrandon {
+    height: 350px;
+    width: 275px;
+  }
+
+  #copyrights {
+    margin-top: 2.5%;
+    text-align: center;
+  }
+
+
 }
