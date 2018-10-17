@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #A75D61;
+  background: #2C3E92;
 }
 
 a:visited, a:link, a:active
@@ -226,7 +226,7 @@ margin-bottom: 10%;
 }
 
 .redsocial:hover {
-  color: #A75D61;
+  color: #000000;
 }
 
 .socialimg {
