@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #A75D61;
+  background: #57595A;
 }
 
 a:visited, a:link, a:active
@@ -161,7 +161,7 @@ nav {
 }
 
 .featuredwrap:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .featuredpics {
@@ -212,6 +212,12 @@ margin-bottom: 10%;
 
 .social {
   margin-bottom: 10%;
+  transition: transform .3s;
+}
+
+
+.social:hover {
+transform: scale(1.03);
 }
 
 .redsocial {
@@ -220,6 +226,7 @@ margin-bottom: 10%;
 
 .redsocial:hover {
   color: #000000;
+  transform: scale(1.03);
 }
 
 .socialimg {
