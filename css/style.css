@@ -16,10 +16,10 @@ nav {
   text-decoration: none;
 }
 
-.thyline {
+/* .thyline {
   border-bottom: solid #A75D61 2px;
   margin-top: 2%;
-}
+} */
 
 .sectitles {
   font-family: 'Basic', sans-serif;
@@ -96,7 +96,7 @@ nav {
 #menu2 a{
   opacity: 1;
   padding-right: 4%;
-  color: #57595A
+  color: #57595A;
 }
 
 #menu2 a:hover {
@@ -151,12 +151,11 @@ nav {
 .featuredwrap {
   margin-bottom: 5%;
   padding-top: 1%;
-  background: #2C3E92;
-  color: white;
+  background: #ffffff;
+  color: #57595A;
   height: 100%;
   text-align: center;
   transition: transform .3s;
-  border-radius: 10px;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -168,7 +167,6 @@ nav {
 .featuredpics {
   height: 325px;
   width: 550px;
-  border-radius: 10px;
 }
 
 .workhov:hover{
@@ -196,12 +194,7 @@ nav {
     padding-top: 5%;
     padding-bottom: 2%;
     width: 100%;
-    bottom: 0;
     text-align: center;
-}
-
-#mainfoot {
-  color: #57595A;
 }
 
 #footerpara {
@@ -237,12 +230,17 @@ margin-bottom: 10%;
 #littlebrandon {
   height: 550px;
   width: 425px;
-  border-radius: 10px;
 }
 
 #copyrights {
-  margin-top: 2.5%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  background: #F6F6F6;
   text-align: center;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+  color: #57595A;
 }
 
 #footername {
@@ -339,7 +337,7 @@ margin-bottom: 10%;
     font-size: 20px;
   }
 
-  #menu2 a{
+  #menu2 a {
     padding-right: 4%;
   }
 
@@ -449,7 +447,8 @@ margin-bottom: 10%;
   }
 
   #copyrights {
-    margin-top: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
   }
 
