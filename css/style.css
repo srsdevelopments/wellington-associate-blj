@@ -247,6 +247,7 @@ color: #57595A;
   bottom: 0;
   width: 100%;
   color: #57595A;
+  font-size: 18px;
 }
 
 #footername {
@@ -453,9 +454,10 @@ color: #57595A;
   }
 
   #copyrights {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
     text-align: center;
+    font-size: 12px;
   }
 
 
