@@ -93,7 +93,7 @@ nav {
   font-size: 38px;
 }
 
-#menu2 a{
+#menu2 a {
   opacity: 1;
   padding-right: 4%;
   color: #57595A;
@@ -110,9 +110,42 @@ nav {
 }
 
 #homecont {
-    height: 100%;
+    width: 100%;
     text-align: center;
-    color: #222222;
+    color: white;
+    background-image: url("../images/ds2big.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  display: table;
+  padding-left: 5%;
+}
+
+#hometextcont {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#hometext1 {
+font-size: 50px;
+}
+
+#hometext2 {
+  font-size: 28px;
+}
+
+#homebtn a {
+  color: navy;
+  border: 2px solid white;
+  padding: 5px 5px 5px 5px;
+  font-size: 30px;
+  background: white;
+}
+
+#homebtn:hover {
+  transform: scale(1.03);
+  margin-left: 1.5%;
 }
 
 .slideimg {
@@ -128,6 +161,16 @@ nav {
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
+}
+
+#slidebtn {
+  border: solid #ffffff 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: #ffffff;
 }
 
 #featured {
@@ -355,7 +398,35 @@ color: #57595A;
   }
 
   #homecont {
-      height: 100%;
+    background-image: url("../images/ds2small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+      height: 650px;
+      text-align: left;
+      display: table;
+      padding-left: 5%;
+      color: white;
+  }
+
+  #hometextcont {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  #hometext1 {
+font-size: 48px;
+  }
+
+  #hometext2 {
+    font-size: 24px;
+  }
+
+  #homebtn a {
+    color: navy;
+    border: 2px solid white;
+    padding: 5px 5px 5px 5px;
+    font-size: 24px;
+    background: white;
   }
 
   .slideimg {
