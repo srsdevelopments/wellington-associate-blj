@@ -135,17 +135,17 @@ font-size: 50px;
   font-size: 28px;
 }
 
-#homebtn a {
+#homebtn {
   color: navy;
   border: 2px solid white;
   padding: 5px 5px 5px 5px;
   font-size: 30px;
   background: white;
+  transition: 1s;
 }
 
 #homebtn:hover {
   transform: scale(1.03);
-  margin-left: 1.5%;
 }
 
 .slideimg {
