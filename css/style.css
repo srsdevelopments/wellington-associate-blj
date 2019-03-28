@@ -135,18 +135,24 @@ font-size: 50px;
   font-size: 28px;
 }
 
-#homebtn {
+#homebtn{
+  transition: transform 1s;
+  width: 50%;
+}
+
+#homebtn a{
   color: navy;
   border: 2px solid white;
   padding: 5px 5px 5px 5px;
   font-size: 30px;
   background: white;
-  transition: 1s;
 }
 
 #homebtn:hover {
   transform: scale(1.03);
 }
+
+
 
 .slideimg {
   width: 100%;
@@ -421,12 +427,9 @@ font-size: 48px;
     font-size: 24px;
   }
 
-  #homebtn a {
-    color: navy;
-    border: 2px solid white;
-    padding: 5px 5px 5px 5px;
+  #homebtn {
+    width: 31.5%;
     font-size: 24px;
-    background: white;
   }
 
   .slideimg {
