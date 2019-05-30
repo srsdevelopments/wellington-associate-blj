@@ -154,7 +154,7 @@ nav {
 }
 @media only screen and (min-width: 600px) {
     #menu2 {
-        font-size: 18px;
+        font-size: 16px;
         height: 100px;
     }
 }
@@ -163,7 +163,7 @@ nav {
         flex-direction: row;
         height: 80px;
         padding-left: 0%;
-        font-size: 20px;
+        font-size: 18px;
     }
     #menu2 a {
         padding: 0 20px;
@@ -280,11 +280,12 @@ font-size: 24px;
 }
 
 /* home button */
-#homebtn{
+#homebtn a{
+  display: inline-block;
     transition: transform .3s;
       font-family: 'Merriweather', serif;
 }
-#homebtn:hover {
+#homebtn a:hover {
     transform: scale(1.03);
 }
 #homebtn a {
@@ -296,12 +297,12 @@ font-size: 24px;
 }
 
 @media (min-width: 600px) {
-  #homebtn {
+  #homebtn a{
       font-size: 20px;
   }
 }
 @media only screen and (min-width: 900px) {
-    #homebtn {
+    #homebtn a {
         font-size: 26px;
     }
 }
