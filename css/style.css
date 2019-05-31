@@ -20,23 +20,24 @@ nav {
 
 /* section titles */
 .sectitles {
-      font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
     text-align: center;
+
     color: #57595A;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-size: 28px;
     margin: 0;
-}
-.sectitles {
     overflow: hidden;
-    text-align: center;
+}
+@media only screen and (min-width: 600px) {
+    .sectitles {
+        font-size: 28px;
+    }
 }
 @media only screen and (min-width: 900px) {
     .sectitles {
-        font-size: 38px;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        font-size: 30px;
     }
 }
 
@@ -311,44 +312,45 @@ font-size: 24px;
 /* featured properties section */
 #featured {
     background: #F6F6F6;
-    height: 100%;
+
+    display: grid;
+    grid-template-rows: 50px repeat(6, 300px);
+    grid-row-gap: 25px;
+
+    padding-top: 25px;
+    padding-bottom: 50px;
+
     text-align: center;
-    padding: 5% 0;
-}
-#featbigblock {
-    margin: 2.5% 0;
+    width: 100%;
 }
 .featblock {
-    margin: 5% 0;
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    #featured {
+        grid-template-rows: 50px repeat(6, 450px);
+        grid-row-gap: 50px;
+    }
 }
 @media only screen and (min-width: 900px) {
     #featured {
-        padding: 1% 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 75px repeat(3, 300px);
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
     }
-    #featbigblock {
-        margin-top: 1%;
-        margin-bottom: 5.5%;
+    #featured .sectitles {
+        grid-column: 1 / span 2;
     }
-    .featblock {
-        margin: 1.5% 0;
+}
+@media only screen and (min-width: 1200px) {
+    #featured {
+        grid-template-rows: 75px repeat(3, 450px);
     }
 }
 
-/* individual featured property styles */
-.featuredwrap {
-    margin-bottom: 5%;
-    padding-top: 1%;
-    background: #ffffff;
-    color: #57595A;
-    height: 100%;
-    text-align: center;
-    transition: transform .3s;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-.featuredwrap:hover {
-    transform: scale(1.03);
-}
+/* hover over animation for grid items and text */
 .workhov:hover{
     opacity: .7;
     -webkit-transition: opacity .3s ease-out;
@@ -356,35 +358,105 @@ font-size: 24px;
     -o-transition: opacity .3s ease-out;
     transition: opacity .3s ease-out;
 }
+.featuredwrap:hover {
+    transform: scale(1.03);
+}
+
+/* individual featured property styles */
+.featuredwrap {
+    color: #57595A;
+    background: #ffffff;
+
+    display: grid;
+    grid-template-rows: 50px 200px 50px;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+    transition: transform .3s;
+}
 .featuredpics {
-    height: 325px;
-    width: 550px;
+    height: 200px;
+    width: 300px;
+}
+@media only screen and (min-width: 450px) {
+    .featuredwrap {
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .featuredwrap {
+        grid-template-rows: 75px 300px 75px;
+        width: 550px;
+    }
+    .featuredpics {
+        height: 300px;
+        width: 450px;
+    }
 }
 @media only screen and (min-width: 900px) {
-    .featuredpics {
-        height: 235px;
+    .featuredwrap {
+        grid-template-rows: 50px 200px 50px;
         width: 400px;
+    }
+    .featuredpics {
+        height: 200px;
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .featuredwrap {
+        grid-template-rows: 75px 300px 75px;
+        width: 550px;
+    }
+    .featuredpics {
+        height: 300px;
+        width: 450px;
     }
 }
 
 /* featured property text */
 .featuredtitle {
-    font-size: 36px;
-    margin-top: 1%;
-      font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
 }
 .featuredpara {
-    margin-top: 7%;
-    font-size: 26px;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 15px;
+}
+@media only screen and (min-width: 600px) {
+    .featuredtitle {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+    .featuredpara {
+        font-size: 20px;
+        padding-top: 20px;
+    }
 }
 @media only screen and (min-width: 900px) {
     .featuredtitle {
         font-size: 20px;
+        padding-top: 10px;
     }
     .featuredpara {
-        margin-top: 5%;
         font-size: 16px;
-        margin-bottom: 1%;
+        padding-top: 15px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .featuredtitle {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+    .featuredpara {
+        font-size: 20px;
+        padding-top: 20px;
     }
 }
 
@@ -397,6 +469,13 @@ font-size: 24px;
     display: grid;
     text-align: center;
     grid-template-columns: 50% 50%;
+    height: 610px;
+}
+
+@media (min-width: 600px) {
+  #picntext {
+height: 500px;
+  }
 }
 @media only screen and (min-width: 900px) {
     #picntext {
@@ -408,17 +487,16 @@ font-size: 24px;
 #thepic {
     grid-row: 1;
     grid-column: 1;
-    height: 100%;
     text-align: left;
 }
 #bkb {
-    height: 735px;
-    width: 550px;
+  height: 100%;
+    width: 385px;
 }
 @media only screen and (min-width: 900px) {
     #bkb {
-        height: 585px;
-        width: 475px;
+        height: 100%;
+        width: 425px;
     }
 }
 
@@ -432,24 +510,23 @@ font-size: 24px;
     padding: 5% 5% 5% 5%;
 }
 #texthead {
-    font-size: 46px;
+    font-size: 28px;
     opacity: 1;
     margin-bottom: 2.5%;
       font-family: 'Merriweather', serif;
 }
 #textpara {
-    font-size: 26px;
+    font-size: 20px;
     opacity: 1;
 }
 @media only screen and (min-width: 900px) {
     #thetext {
-        padding: 17.5% 5% 0% 5%;
     }
     #texthead {
-        font-size: 44px;
+        font-size: 30px;
     }
     #textpara {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
