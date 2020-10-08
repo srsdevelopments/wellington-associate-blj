@@ -71,8 +71,7 @@ nav {
     opacity: .7;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+text-align: center;
     position: fixed;
     z-index: 1;
 
@@ -120,6 +119,8 @@ nav {
 @media only screen and (min-width: 900px) {
     #menu1 {
         height: 80px;
+        grid-row: 1;
+        grid-column: 1;
     }
     #bljlogo {
         margin: 5px 0px 5px 20%;
@@ -128,12 +129,9 @@ nav {
 
 /* menu 2 nav styles */
 #menu2 {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
+  grid-column: 2;
+  grid-row: 1;
+padding-top: 25px;
     font-size: 16px;
     line-height: 25px;
 
@@ -142,7 +140,9 @@ nav {
 }
 #menu2 a {
     color: #57595A;
-      font-family: 'Merriweather', serif;
+      /* font-family: 'Merriweather', serif; */
+      padding-right: 2.5%;
+
 }
 #menu2 a:hover {
     color: #000000;
@@ -152,20 +152,22 @@ nav {
         font-size: 16px;
         line-height: 30px;
         padding-left: 10%;
+        padding-top: 25px;
     }
 }
 @media only screen and (min-width: 600px) {
     #menu2 {
         font-size: 16px;
         height: 100px;
+        padding-top: 35px;
     }
 }
 @media only screen and (min-width: 900px) {
     #menu2 {
-        flex-direction: row;
         height: 80px;
         padding-left: 0%;
         font-size: 18px;
+        padding-top: 25px;
     }
     #menu2 a {
         padding: 0 20px;
